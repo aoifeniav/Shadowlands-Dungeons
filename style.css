@@ -1,0 +1,195 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url(sl_dg_fonts/Signika/static/Signika-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(sl_dg_fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(sl_dg_fonts/Montserrat/Montserrat-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --color-text: #f0e3ca;
+  --color-shiny: #ff9328;
+  --color-dark: #c4680d;
+  --color-bg: #1b1a17;
+  --font-title: "Signika";
+  --font-normal: "Montserrat";
+  --line: 1px solid #a35709;
+  --shadow: 2px 2px 3px black;
+}
+
+header {
+  border-bottom: var(--line);
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__btn {
+  color: var(--color-shiny);
+  font-weight: bold;
+  display: inline-block;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+.menu__btn:hover {
+  color: var(--color-shiny);
+  -webkit-box-shadow: inset 0px -2px 0px var(--color-dark);
+          box-shadow: inset 0px -2px 0px var(--color-dark);
+}
+
+.menu__btn:hover .menu__long {
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__btn:hover .menu__short {
+  display: none;
+}
+
+.menu__long {
+  padding: 0;
+  display: none;
+}
+
+.dg-card {
+  height: 350px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+.dg-card:hover .dg-card__desc {
+  display: block;
+  opacity: 1;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.dg-card:hover .dg-card__opacity {
+  background-color: black;
+  opacity: 0.75;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.dg-card:hover .dg-card__title {
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.dg-card--text-shadow {
+  text-shadow: var(--shadow);
+}
+
+.dg-card--overlay {
+  position: absolute;
+  width: 100%;
+}
+
+.dg-card__opacity {
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.dg-card__title {
+  text-align: center;
+  bottom: 10px;
+  font-family: var(--font-title);
+  color: var(--color-shiny);
+  font-size: 1.5rem;
+  opacity: 1;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.dg-card__desc {
+  height: 90%;
+  width: 85%;
+  top: 25px;
+  left: 25px;
+  color: var(--color-text);
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  overflow: auto;
+}
+
+.dg-card__nw {
+  background-image: url(sl_dg_img/nw.jpg);
+}
+
+.dg-card__soa {
+  background-image: url(sl_dg_img/soa.jpg);
+  background-position: 70% 50%;
+}
+
+.dg-card__pf {
+  background-image: url(sl_dg_img/pf.jpg);
+}
+
+.dg-card__top {
+  background-image: url(sl_dg_img/top.jpg);
+  background-position: 0% 50%;
+}
+
+.dg-card__mots {
+  background-image: url(sl_dg_img/mots.jpg);
+}
+
+.dg-card__dos {
+  background-image: url(sl_dg_img/dos.jpg);
+  background-position: 70% 50%;
+}
+
+.dg-card__hoa {
+  background-image: url(sl_dg_img/hoa.jpg);
+}
+
+.dg-card__sd {
+  background-image: url(sl_dg_img/sd.jpg);
+}
+/*# sourceMappingURL=style.css.map */

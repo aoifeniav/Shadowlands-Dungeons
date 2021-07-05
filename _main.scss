@@ -1,0 +1,97 @@
+.dg-card {
+    height: 350px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--shadow);
+
+    &:hover {
+        .dg-card__desc {
+            display: block;
+            opacity: 1;
+            transition: 0.25s;
+        }
+
+        .dg-card__opacity {
+            background-color: black;
+            opacity: 0.75;
+            transition: 0.25s;
+        }
+
+        .dg-card__title {
+            opacity: 0;
+            transition: 0.25s;
+        }
+    }
+
+    &--text-shadow {
+        text-shadow: var(--shadow);
+    }
+
+    &--overlay {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__opacity {
+        height: 100%;
+        opacity: 0;
+        transition: 0.25s;
+    }
+
+    &__title {
+        text-align: center;
+        bottom: 10px;
+        font-family: var(--font-title);
+        color: var(--color-shiny);
+        font-size: 1.5rem;
+        opacity: 1;
+        transition: 0.25s;
+    }
+
+    &__desc {
+        height: 90%;
+        width: 85%;
+        top: 25px;
+        left: 25px;
+        color: var(--color-text);
+        opacity: 0;
+        transition: 0.25s;
+        overflow: auto;
+    }
+
+    &__nw {
+        background-image: url(sl_dg_img/nw.jpg);
+    }
+
+    &__soa {
+        background-image: url(sl_dg_img/soa.jpg);
+        background-position: 70% 50%;
+    }
+
+    &__pf {
+        background-image: url(sl_dg_img/pf.jpg);
+    }
+
+    &__top {
+        background-image: url(sl_dg_img/top.jpg);
+        background-position: 0% 50%;
+    }
+
+    &__mots {
+        background-image: url(sl_dg_img/mots.jpg);
+    }
+
+    &__dos {
+        background-image: url(sl_dg_img/dos.jpg);
+        background-position: 70% 50%;
+    }
+
+    &__hoa {
+        background-image: url(sl_dg_img/hoa.jpg);
+    }
+
+    &__sd {
+        background-image: url(sl_dg_img/sd.jpg);
+    }
+}

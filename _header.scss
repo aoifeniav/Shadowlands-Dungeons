@@ -1,0 +1,36 @@
+header {
+    border-bottom: var(--line);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__btn {
+        color: var(--color-shiny);
+        font-weight: bold;
+        display: inline-block;
+        padding: 15px 0;
+        text-transform: uppercase;
+
+        &:hover {
+            color: var(--color-shiny);
+            box-shadow: inset 0px -2px 0px var(--color-dark);
+
+            .menu__long {
+                display: inline-block;
+                transition: 0.5s;
+            }
+
+            .menu__short {
+                display: none;
+            }
+        }
+    }
+
+    &__long {
+        padding: 0;
+        display: none;
+    }
+}
